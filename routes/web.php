@@ -35,8 +35,9 @@ Route::post('/thumb', [UserController::class, 'thumb'])->middleware('auth');
 Route::get('/payment', [LoginController::class, 'payment']);
 Route::post('/payment', [LoginController::class, 'savePayment']);
 
-Route::get('/top-up', [UserController::class, 'topUp']);
-Route::get('/settings', [UserController::class, 'settings']);
-Route::post('/buyDisappear', [UserController::class, 'buyDisappear']);
+Route::get('/top-up', [UserController::class, 'topUp'])->middleware('auth');
+Route::post('/top-up', [UserController::class, 'updateWallet'])->middleware('auth');
+Route::get('/settings', [UserController::class, 'settings'])->middleware('auth');
+Route::post('/buyDisappear', [UserController::class, 'buyDisappear'])->middleware('auth');
 
 
