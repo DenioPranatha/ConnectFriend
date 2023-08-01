@@ -84,7 +84,7 @@ class UserController extends Controller
     public function buyDisappear(Request $request){
         $user = User::find(auth()->user()->id);
         $user->wallet = $user->wallet - 50;
-        $user->image  = 'image/bear.jpg';
+        $user->image  = 'image/bear.png';
         $user->save();
 
         return redirect('/user');
