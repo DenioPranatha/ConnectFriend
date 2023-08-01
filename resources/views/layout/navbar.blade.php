@@ -16,6 +16,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/top-up">Top Up </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/settings">Settings</a>
+                </li>
               </ul>
           </div>
           @if (auth()->check())

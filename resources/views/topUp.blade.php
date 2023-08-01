@@ -17,7 +17,7 @@
             @csrf
             <input type="number" id="Qty" name="wallet" value="{{ auth()->user()->wallet }}" class="mx-4 w-25 text-center">
 
-            <button type="submit" onclick="addAmount()" class="btn" style="background-color: #FFD369; border: 2px solid pink;">Top Up</button>
+            <button type="submit" onclick="addAmount()" class="btn" style="background-color: #FFD369; border: 2px solid #FFD369;">Top Up</button>
           </form>
         </h3>
     </div>
